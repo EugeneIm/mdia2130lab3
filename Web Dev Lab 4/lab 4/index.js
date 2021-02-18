@@ -63,7 +63,7 @@ if(this.value.toLowerCase() == "dog")
 
 if(this.value.toLowerCase() == "")
 {
-    alert("missing data") 
+    setTimeout(alert("missing data"), 3000)
     document.getElementById('t').style.backgroundColor = "yellow"
 }
 
@@ -85,15 +85,5 @@ for(i = 0;i < img.length; i++)
     {
         img[i].style.width = "200px"
     }
-}
-
-function changeBG()
-{
-    document.getElementsByTagName('p').style.backgroundColor = "yellow"
-}
-
-function BG()
-{
-    document.getElementsByTagName('p').style.backgroundColor = "white"
 }
 }

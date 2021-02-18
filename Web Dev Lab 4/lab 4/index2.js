@@ -69,9 +69,9 @@ textbox.onclick = function()
         document.getElementById('turtle').style.border = "3px red dashed"
     }
     function BG()
-{
+    {
     document.getElementsByTagName('p').style.backgroundColor = "yellow"
-}
+    }
 }
 
 var img = document.getElementsByTagName('img');

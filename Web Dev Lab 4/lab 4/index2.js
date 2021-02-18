@@ -68,10 +68,13 @@ textbox.onclick = function()
         document.getElementById('fish').style.border = "3px red dashed"
         document.getElementById('turtle').style.border = "3px red dashed"
     }
-    
+
 }
 
-
+function BG()
+{
+    document.getElementsByTagName('p').style.backgroundColor = "yellow"
+}
 
 var img = document.getElementsByTagName('img');
 for(i = 0;i < img.length; i++)

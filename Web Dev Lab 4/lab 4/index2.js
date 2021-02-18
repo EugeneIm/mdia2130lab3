@@ -68,12 +68,14 @@ textbox.onclick = function()
         document.getElementById('fish').style.border = "3px red dashed"
         document.getElementById('turtle').style.border = "3px red dashed"
     }
-    if(this.value.toLowerCase() == "joke");
+    if(this.value.toLowerCase() == "joke")
+    {
         paras = document.getElementsByTagName('p');
-        for(let i = 0; i < paras.length; i++)
+        for(var i = 0; i < paras.length; i++)
         {
             paras[i].style.border = "2px red dashed"
         }
+    }
 }
 
 

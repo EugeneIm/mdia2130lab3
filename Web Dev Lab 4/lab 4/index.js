@@ -13,6 +13,13 @@ textbox.onclick = function()
 
     //if the textbox has "dog" in it, the dog image has to have a red border dotted
 
+if(this.value.toLowerCase() == "water")
+{
+    document.getElementById('fish').style.border = "3px red dashed"
+    document.getElementById('turtle').style.border = "3px red dashed"
+}
+
+
 if(this.value.toLowerCase() == "dog")
 {
     document.getElementById('dog').style.border = "5px red dashed"
@@ -53,6 +60,17 @@ if(this.value.toLowerCase() == "dog")
             paras[i].style.border = "3px red dashed"
         }
     }
+
+if(this.value.toLowerCase() == "")
+{
+    alert("missing data") 
+    document.getElementById('t').style.backgroundColor = "yellow"
+}
+
+if(this.value.toLowerCase() == "")
+{
+    document.getElementsByTagName('p').innerHTML = this.value
+}
 }
 
 textbox.onkeyup = function()
@@ -69,4 +87,13 @@ for(i = 0;i < img.length; i++)
     }
 }
 
+function changeBG()
+{
+    document.getElementsByTagName('p').style.backgroundColor = "yellow"
+}
+
+function BG()
+{
+    document.getElementsByTagName('p').style.backgroundColor = "white"
+}
 }

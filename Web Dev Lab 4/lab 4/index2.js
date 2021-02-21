@@ -76,7 +76,9 @@ textbox.onclick = function()
             paras[i].style.border = "2px red dashed"
         }
     }
+    let 
 }
+
 
 
 var img = document.getElementsByTagName('img');

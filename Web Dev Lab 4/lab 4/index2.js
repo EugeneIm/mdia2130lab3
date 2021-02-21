@@ -68,7 +68,7 @@ textbox.onclick = function()
         document.getElementById('fish').style.border = "3px red dashed"
         document.getElementById('turtle').style.border = "3px red dashed"
     }
-    if(this.value.toLowerCase() == "joke")
+    if(this.value.toLowerCase.includes() == "joke")
     {
         paras = document.getElementsByTagName('p');
         for(var i = 0; i < paras.length; i++)
@@ -76,7 +76,6 @@ textbox.onclick = function()
             paras[i].style.border = "2px red dashed"
         }
     }
-    let 
 }
 
 
@@ -87,6 +86,16 @@ for(i = 0;i < img.length; i++)
     if(img.length >= 3)
     {
         img[i].style.width = "200px"
+    }
+}
+
+
+var ImageAll = document.getelementbytagname("img")
+for (let i = 0; i < ImagesAll.length; i++)
+{
+    ImagesAll[i].ondblclick = function()
+    {
+this.width = math.round(this.width/2)
     }
 }
 }

@@ -88,14 +88,4 @@ for(i = 0;i < img.length; i++)
         img[i].style.width = "200px"
     }
 }
-
-
-var ImageAll = document.getelementbytagname("img")
-for (let i = 0; i < ImagesAll.length; i++)
-{
-    ImagesAll[i].ondblclick = function()
-    {
-this.width = math.round(this.width/2)
-    }
-}
 }

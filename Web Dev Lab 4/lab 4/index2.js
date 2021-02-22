@@ -119,13 +119,13 @@ for(i = 0;i < img.length; i++)
 }
 
 
-
-    let AllImages = document.getElementsByTagName('img')
+window.onload
+let AllImages = document.getElementsByTagName('img')
     
-    for(let i = 0; i < AllImages.length; i++)
+for(let i = 0; i < AllImages.length; i++)
+{
+    AllImages[i].ondblclick = function()
     {
-        AllImages[i].ondblclick = function()
-        {
-            this.height = math.round(this.height/2)
-        }
+        this.height = (this.height/2)
     }
+}

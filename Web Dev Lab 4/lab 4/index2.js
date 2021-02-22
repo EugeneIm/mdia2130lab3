@@ -106,6 +106,7 @@ onload = function()
 }
 
 
+
 var img = document.getElementsByTagName('img');
 for(i = 0;i < img.length; i++)
 {

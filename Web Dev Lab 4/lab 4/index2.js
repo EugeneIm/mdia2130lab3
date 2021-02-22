@@ -79,16 +79,6 @@ textbox.onclick = function()
             paras[i].style.border = "2px red dashed"
         }
     }
-    
-    let AllImages = document.getElementsByTagName('img')
-    
-    for(let i = 0; i < AllImages.length; i++)
-    {
-        AllImages[i].ondblclick = function()
-        {
-            this.height = math.round(this.height/2)
-        }
-    }
 }
 
 function paraYellow()
@@ -104,7 +94,7 @@ function paraWhite()
 onload = function()
 {
     var paras = document.getElementsByTagName('p')
-
+    
     for(var i = 0; i < paras.length; i++)
     {
         paras[i].onmouseover = paraYellow
@@ -113,7 +103,7 @@ onload = function()
     {
         paras[i].onmouseleave = paraWhite
     }
-
+    
 }
 
 
@@ -127,3 +117,15 @@ for(i = 0;i < img.length; i++)
     }
 }
 }
+
+
+
+    let AllImages = document.getElementsByTagName('img')
+    
+    for(let i = 0; i < AllImages.length; i++)
+    {
+        AllImages[i].ondblclick = function()
+        {
+            this.height = math.round(this.height/2)
+        }
+    }

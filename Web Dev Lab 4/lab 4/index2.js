@@ -79,6 +79,16 @@ textbox.onclick = function()
             paras[i].style.border = "2px red dashed"
         }
     }
+    
+    let AllImages = document.getElementsByTagName('img')
+    
+    for(let i = 0; i < AllImages.length; i++)
+    {
+        AllImages[i].ondblclick = function()
+        {
+            this.height = math.round(this.height/2)
+        }
+    }
 }
 
 function paraYellow()
@@ -89,6 +99,7 @@ function paraWhite()
 {
     this.style.backgroundColor = "white" 
 }
+
 
 onload = function()
 {

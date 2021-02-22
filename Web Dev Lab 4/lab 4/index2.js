@@ -81,6 +81,29 @@ textbox.onclick = function()
     }
 }
 
+function paraYellow()
+{
+    this.style.backgroundColor = "yellow"
+}
+function paraWhite()
+{
+    this.style.backgroundColor = "white" 
+}
+
+onload = function()
+{
+    var paras = document.getElementsByTagName('p')
+
+    for(var i = 0; i < paras.length; i++)
+    {
+        paras[i].onmouseover = paraYellow
+    }
+    for(var i = 0; i< paras.length; i++)
+    {
+        paras[i].onmouseleave = paraWhite
+    }
+
+}
 
 
 var img = document.getElementsByTagName('img');

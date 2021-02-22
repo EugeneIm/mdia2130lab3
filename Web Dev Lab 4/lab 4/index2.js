@@ -3,6 +3,7 @@ window.onload = doStuff // when the window is finished loading, call the doStuff
 function doStuff()
 {
 let textbox = document.getElementById("t")
+let paras = document.getElementsByTagName('p');
 textbox.onkeyup = function()
 {
     document.getElementById('para').innerHeight = this.value
@@ -68,7 +69,9 @@ textbox.onclick = function()
         document.getElementById('fish').style.border = "3px red dashed"
         document.getElementById('turtle').style.border = "3px red dashed"
     }
-    if(this.value.toLowerCase.includes() == "joke")
+    
+    let textvalue = this.value;
+    if(textvalue.toLowerCase().includes("joke"))
     {
         paras = document.getElementsByTagName('p');
         for(var i = 0; i < paras.length; i++)
